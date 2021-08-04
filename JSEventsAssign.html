@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Events Assign</title>
+        
+        <script>
+            function OnclickEvent() {
+               alert("Welcome to the Page")
+            }
+            
+            //onSubmit function
+            function validate() {
+            }
+
+            //onChange function
+            function lowercase() {
+            const x = document.getElementById("fname");
+            x.value = x.value.toLowerCase();
+            }
+        </script>   
+    
+    </head>
+
+    <body>
+        <h2><center>JavaScript Events</center></h2>
+        
+
+        <p>Onclick Event</p>      
+        <form>
+              <input type = "button" onclick = "OnclickEvent()" value = "Click Me" />
+        </form>
+
+
+        <p>OnSubmit Event</p>
+        <form method = "GET" action = "ajay.jsp" onsubmit = "return validate()">
+            <input type = "submit" value = "Submit" />
+        </form>   
+
+
+        <p>Uppercase to LowerCase Conversion i.e Onchange Event</p>
+        Enter your name: <input type="text" id="fname" onchange="lowercase()"><br>
+      
+   
+    </body>
+</html>
